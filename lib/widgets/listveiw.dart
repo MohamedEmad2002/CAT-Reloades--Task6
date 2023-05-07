@@ -6,7 +6,11 @@ class PageOne extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+      appBar: AppBar(title: const Text('My App bar'),
+        actions: [
+          IconButton(onPressed: (){}, icon: const Icon(Icons.refresh))
+        ],
+      ),
       body: SafeArea(child: Container(
         width: 500,
         height: 800,
